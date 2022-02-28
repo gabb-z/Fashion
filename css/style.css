@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#container {
+    margin: auto;
+}
+
+.header {
+    background-color: #162028;
+    text-align: center;
+}
+
+.header-logo {
+    margin: 10px 0;
+}
+
+.nav-bar ul {
+    list-style: none;
+}
+
+.nav-bar ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.875em;
+}
+
+.nav-bar ul li a:hover {
+    background-color: #1a2d41;
+}
+
+.img-topo {
+    display: none;
+}
+
+.portfolio {
+    text-align: center;
+    padding: 50px 25px;
+}
+
+.titulo-portfolio {
+    font-size: 2.375em;
+    color: #252525;
+    margin-bottom: 15px;
+}
+
+.desc-portfolio {
+    line-height: 1.5;
+    color: #555;
+}
+
+.galeria {
+    color: #555;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card {
+    margin-bottom: 25px;
+}
+
+.card img {
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px #ccc;
+}
+
+.titulo-galeria {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 5px 0 2px 0;
+}
+
+.artigo-sobre {
+    background-color: #003d52;
+    color: white;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 75px 50px;
+    margin-bottom: 50px;
+}
+
+.titulo-sobre {
+    text-transform: uppercase;
+    font-size: 2.25em;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.desc-sobre {
+    line-height: 1.5;
+}
+
+.contato address {
+    margin-bottom: 50px;
+    color: #143f52;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25em;
+    font-style: normal;
+}
+
+.mapa {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tamanho-mapa {
+    width: 22.5em;
+    height: 25em;
+}
+
+.footer {
+    background-color: #0b171f;
+    color: #6f8597;
+    padding: 25px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+@media screen and (min-width: 17.5em) {
+    #container {
+        margin: auto;
+    }
+
+    .tam-min {
+        width: 17.5em;
+    }
+}
+
+@media screen and (min-width: 45em) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-logo {
+        margin-left: 75px;
+    }
+
+    .nav-bar ul {
+        display: flex;
+    }
+
+    .nav-bar ul li a {
+        font-size: 12px;
+        color: #425567;
+        transition: color 0.3s linear;
+        display: inline-block;
+    }
+
+    .nav-bar ul li a:hover {
+        color: white;
+        background-color: transparent;
+    }
+
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .card {
+        margin: 0 12.5px 25px;
+    }
+
+    .artigo-sobre {
+        padding: 100px;
+    }
+
+    .titulo-sobre {
+        font-size: 2.50em;
+    }
+
+    .contato address {
+        font-size: 1.75em;
+    }
+
+    .tamanho-mapa {
+        width: 37.5em;
+        height: 28.125em;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    #container {
+        width: 64em;
+        margin: 50px auto;
+    }
+
+    .header-logo {
+        margin-left: 175px;
+    }
+
+    .img-topo {
+        display: block;
+    }
+
+    .portfolio{
+        padding: 50px 100px;
+    }
+
+    .artigo-sobre {
+        padding: 150px;
+    }
+
+    .titulo-sobre {
+        font-size: 2.75em;
+    }
+
+    .desc-sobre {
+        font-size: 1.25em;
+    }
+}
